@@ -30,7 +30,7 @@ Input Login
 กดเพิ่มสินค้า
     Click Element  //*[@id="product-list"]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/button    
 ไปหน้าcart
-    Go To   http://localhost:5000/cart
+    Go To   http://localhost:5000/
 *** Test Cases ***
 ทดสอบ robot101
    เปิดเว็บBigc
