@@ -46,9 +46,11 @@ Input Login
     Click Link      link=ดำเนินการต่อ
 ConFirm
     Click Element      //*[@id="__layout"]/div/div[2]/div[2]/div/div[2]/div[2]/button
+    Sleep    20s 
 Order สำเร็จ
-     Wait Until Page Contains    ${expected_result}
-               
+    Wait Until Page Contains    ${expected_result}
+    Set Screenshot Directory  /Users/nanattapong/Robot101/success
+    Capture Page Screenshot                
 *** Test Cases ***
 ทดสอบ robot101
    เปิดเว็บBigc
@@ -72,3 +74,4 @@ Order สำเร็จ
    รอโหลด
    ConFirm
    Order สำเร็จ
+   

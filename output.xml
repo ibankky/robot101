@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20200703 15:09:56.394" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20200703 15:32:23.943" rpa="false">
 <suite id="s1" name="Robot101" source="/Users/nanattapong/Robot101/robot101.robot">
 <test id="s1-t1" name="ทดสอบ robot101">
 <kw name="เปิดเว็บBigc">
@@ -9,10 +9,10 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200703 15:09:56.638" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5000/'.</msg>
-<status status="PASS" starttime="20200703 15:09:56.638" endtime="20200703 15:10:00.048"></status>
+<msg timestamp="20200703 15:32:24.099" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5000/'.</msg>
+<status status="PASS" starttime="20200703 15:32:24.098" endtime="20200703 15:32:27.665"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:09:56.638" endtime="20200703 15:10:00.048"></status>
+<status status="PASS" starttime="20200703 15:32:24.098" endtime="20200703 15:32:27.665"></status>
 </kw>
 <kw name="คลิ๊ก Login">
 <kw name="Click Link" library="Selenium2Library">
@@ -20,10 +20,10 @@
 <arguments>
 <arg>link=เข้าสู่ระบบ</arg>
 </arguments>
-<msg timestamp="20200703 15:10:00.049" level="INFO">Clicking link 'link=เข้าสู่ระบบ'.</msg>
-<status status="PASS" starttime="20200703 15:10:00.048" endtime="20200703 15:10:00.256"></status>
+<msg timestamp="20200703 15:32:27.666" level="INFO">Clicking link 'link=เข้าสู่ระบบ'.</msg>
+<status status="PASS" starttime="20200703 15:32:27.666" endtime="20200703 15:32:27.845"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:00.048" endtime="20200703 15:10:00.256"></status>
+<status status="PASS" starttime="20200703 15:32:27.665" endtime="20200703 15:32:27.845"></status>
 </kw>
 <kw name="Input Login">
 <kw name="Input Text" library="Selenium2Library">
@@ -32,8 +32,8 @@
 <arg>ID=emailLogin</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20200703 15:10:00.256" level="INFO">Typing text 'finch255@hotmail.com' into text field 'ID=emailLogin'.</msg>
-<status status="PASS" starttime="20200703 15:10:00.256" endtime="20200703 15:10:00.544"></status>
+<msg timestamp="20200703 15:32:27.846" level="INFO">Typing text 'finch255@hotmail.com' into text field 'ID=emailLogin'.</msg>
+<status status="PASS" starttime="20200703 15:32:27.845" endtime="20200703 15:32:28.157"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -41,18 +41,18 @@
 <arg>ID=passwordLogin</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20200703 15:10:00.544" level="INFO">Typing text '12345678' into text field 'ID=passwordLogin'.</msg>
-<status status="PASS" starttime="20200703 15:10:00.544" endtime="20200703 15:10:00.659"></status>
+<msg timestamp="20200703 15:32:28.158" level="INFO">Typing text '12345678' into text field 'ID=passwordLogin'.</msg>
+<status status="PASS" starttime="20200703 15:32:28.157" endtime="20200703 15:32:28.287"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>ID=btn-login</arg>
 </arguments>
-<msg timestamp="20200703 15:10:00.659" level="INFO">Clicking button 'ID=btn-login'.</msg>
-<status status="PASS" starttime="20200703 15:10:00.659" endtime="20200703 15:10:00.734"></status>
+<msg timestamp="20200703 15:32:28.288" level="INFO">Clicking button 'ID=btn-login'.</msg>
+<status status="PASS" starttime="20200703 15:32:28.287" endtime="20200703 15:32:28.373"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:00.256" endtime="20200703 15:10:00.734"></status>
+<status status="PASS" starttime="20200703 15:32:27.845" endtime="20200703 15:32:28.374"></status>
 </kw>
 <kw name="รอโหลด">
 <kw name="Sleep" library="BuiltIn">
@@ -60,10 +60,10 @@
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20200703 15:10:10.735" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200703 15:10:00.734" endtime="20200703 15:10:10.735"></status>
+<msg timestamp="20200703 15:32:38.375" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200703 15:32:28.374" endtime="20200703 15:32:38.375"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:00.734" endtime="20200703 15:10:10.735"></status>
+<status status="PASS" starttime="20200703 15:32:28.374" endtime="20200703 15:32:38.375"></status>
 </kw>
 <kw name="ค้นหา น้ำ">
 <kw name="Input Text" library="Selenium2Library">
@@ -72,8 +72,8 @@
 <arg>ID=search-id</arg>
 <arg>${searchData}</arg>
 </arguments>
-<msg timestamp="20200703 15:10:10.736" level="INFO">Typing text 'น้ำดื่ม' into text field 'ID=search-id'.</msg>
-<status status="PASS" starttime="20200703 15:10:10.736" endtime="20200703 15:10:11.059"></status>
+<msg timestamp="20200703 15:32:38.376" level="INFO">Typing text 'น้ำดื่ม' into text field 'ID=search-id'.</msg>
+<status status="PASS" starttime="20200703 15:32:38.375" endtime="20200703 15:32:38.564"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -81,12 +81,12 @@
 <arg>ID=search-id</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20200703 15:10:11.060" level="INFO">Sending key(s) ('ENTER',) to ID=search-id element.</msg>
-<msg timestamp="20200703 15:10:11.346" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20200703 15:10:11.346" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20200703 15:10:11.059" endtime="20200703 15:10:11.360"></status>
+<msg timestamp="20200703 15:32:38.565" level="INFO">Sending key(s) ('ENTER',) to ID=search-id element.</msg>
+<msg timestamp="20200703 15:32:38.849" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20200703 15:32:38.849" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200703 15:32:38.564" endtime="20200703 15:32:38.862"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:10.735" endtime="20200703 15:10:11.361"></status>
+<status status="PASS" starttime="20200703 15:32:38.375" endtime="20200703 15:32:38.863"></status>
 </kw>
 <kw name="รอโหลด">
 <kw name="Sleep" library="BuiltIn">
@@ -94,10 +94,10 @@
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20200703 15:10:21.362" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200703 15:10:11.361" endtime="20200703 15:10:21.362"></status>
+<msg timestamp="20200703 15:32:48.864" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200703 15:32:38.863" endtime="20200703 15:32:48.864"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:11.361" endtime="20200703 15:10:21.362"></status>
+<status status="PASS" starttime="20200703 15:32:38.863" endtime="20200703 15:32:48.865"></status>
 </kw>
 <kw name="รอผลลัพธ์">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -105,9 +105,9 @@
 <arguments>
 <arg>${searchData}</arg>
 </arguments>
-<status status="PASS" starttime="20200703 15:10:21.363" endtime="20200703 15:10:21.407"></status>
+<status status="PASS" starttime="20200703 15:32:48.866" endtime="20200703 15:32:48.913"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:21.363" endtime="20200703 15:10:21.407"></status>
+<status status="PASS" starttime="20200703 15:32:48.865" endtime="20200703 15:32:48.913"></status>
 </kw>
 <kw name="คลิ๊กปิดblackdrop">
 <kw name="Click Button" library="Selenium2Library">
@@ -115,10 +115,10 @@
 <arguments>
 <arg>//*[@id="header"]/div[1]/div/div[2]/div/div/button</arg>
 </arguments>
-<msg timestamp="20200703 15:10:21.408" level="INFO">Clicking button '//*[@id="header"]/div[1]/div/div[2]/div/div/button'.</msg>
-<status status="PASS" starttime="20200703 15:10:21.408" endtime="20200703 15:10:21.456"></status>
+<msg timestamp="20200703 15:32:48.914" level="INFO">Clicking button '//*[@id="header"]/div[1]/div/div[2]/div/div/button'.</msg>
+<status status="PASS" starttime="20200703 15:32:48.914" endtime="20200703 15:32:48.962"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:21.407" endtime="20200703 15:10:21.456"></status>
+<status status="PASS" starttime="20200703 15:32:48.913" endtime="20200703 15:32:48.963"></status>
 </kw>
 <kw name="กดเพิ่มสินค้า">
 <kw name="Click Element" library="Selenium2Library">
@@ -126,10 +126,10 @@
 <arguments>
 <arg>//*[@id="product-list"]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/button</arg>
 </arguments>
-<msg timestamp="20200703 15:10:21.456" level="INFO">Clicking element '//*[@id="product-list"]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/button'.</msg>
-<status status="PASS" starttime="20200703 15:10:21.456" endtime="20200703 15:10:21.578"></status>
+<msg timestamp="20200703 15:32:48.963" level="INFO">Clicking element '//*[@id="product-list"]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20200703 15:32:48.963" endtime="20200703 15:32:49.089"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:21.456" endtime="20200703 15:10:21.578"></status>
+<status status="PASS" starttime="20200703 15:32:48.963" endtime="20200703 15:32:49.089"></status>
 </kw>
 <kw name="ไปหน้าcart">
 <kw name="Go To" library="Selenium2Library">
@@ -137,10 +137,10 @@
 <arguments>
 <arg>http://localhost:5000/cart</arg>
 </arguments>
-<msg timestamp="20200703 15:10:21.579" level="INFO">Opening url 'http://localhost:5000/cart'</msg>
-<status status="PASS" starttime="20200703 15:10:21.578" endtime="20200703 15:10:22.179"></status>
+<msg timestamp="20200703 15:32:49.090" level="INFO">Opening url 'http://localhost:5000/cart'</msg>
+<status status="PASS" starttime="20200703 15:32:49.089" endtime="20200703 15:32:49.730"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:21.578" endtime="20200703 15:10:22.179"></status>
+<status status="PASS" starttime="20200703 15:32:49.089" endtime="20200703 15:32:49.730"></status>
 </kw>
 <kw name="รอโหลด">
 <kw name="Sleep" library="BuiltIn">
@@ -148,10 +148,10 @@
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20200703 15:10:32.180" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200703 15:10:22.180" endtime="20200703 15:10:32.181"></status>
+<msg timestamp="20200703 15:32:59.731" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200703 15:32:49.730" endtime="20200703 15:32:59.731"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:22.179" endtime="20200703 15:10:32.181"></status>
+<status status="PASS" starttime="20200703 15:32:49.730" endtime="20200703 15:32:59.731"></status>
 </kw>
 <kw name="คลิ๊กไป step1">
 <kw name="Click Link" library="Selenium2Library">
@@ -159,10 +159,10 @@
 <arguments>
 <arg>link=ดำเนินการสั่งซื้อ</arg>
 </arguments>
-<msg timestamp="20200703 15:10:32.182" level="INFO">Clicking link 'link=ดำเนินการสั่งซื้อ'.</msg>
-<status status="PASS" starttime="20200703 15:10:32.182" endtime="20200703 15:10:32.356"></status>
+<msg timestamp="20200703 15:32:59.732" level="INFO">Clicking link 'link=ดำเนินการสั่งซื้อ'.</msg>
+<status status="PASS" starttime="20200703 15:32:59.732" endtime="20200703 15:32:59.872"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:32.181" endtime="20200703 15:10:32.356"></status>
+<status status="PASS" starttime="20200703 15:32:59.732" endtime="20200703 15:32:59.873"></status>
 </kw>
 <kw name="รอโหลด">
 <kw name="Sleep" library="BuiltIn">
@@ -170,10 +170,10 @@
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20200703 15:10:42.358" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200703 15:10:32.357" endtime="20200703 15:10:42.358"></status>
+<msg timestamp="20200703 15:33:09.873" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200703 15:32:59.873" endtime="20200703 15:33:09.874"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:32.356" endtime="20200703 15:10:42.359"></status>
+<status status="PASS" starttime="20200703 15:32:59.873" endtime="20200703 15:33:09.874"></status>
 </kw>
 <kw name="คลิ๊กไป step2">
 <kw name="Click Link" library="Selenium2Library">
@@ -181,10 +181,10 @@
 <arguments>
 <arg>link=ดำเนินการต่อ</arg>
 </arguments>
-<msg timestamp="20200703 15:10:42.360" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
-<status status="PASS" starttime="20200703 15:10:42.359" endtime="20200703 15:10:42.475"></status>
+<msg timestamp="20200703 15:33:09.875" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
+<status status="PASS" starttime="20200703 15:33:09.875" endtime="20200703 15:33:09.990"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:42.359" endtime="20200703 15:10:42.475"></status>
+<status status="PASS" starttime="20200703 15:33:09.874" endtime="20200703 15:33:09.990"></status>
 </kw>
 <kw name="รอโหลด">
 <kw name="Sleep" library="BuiltIn">
@@ -192,10 +192,10 @@
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20200703 15:10:52.478" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200703 15:10:42.476" endtime="20200703 15:10:52.478"></status>
+<msg timestamp="20200703 15:33:19.992" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200703 15:33:09.991" endtime="20200703 15:33:19.992"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:42.475" endtime="20200703 15:10:52.478"></status>
+<status status="PASS" starttime="20200703 15:33:09.991" endtime="20200703 15:33:19.992"></status>
 </kw>
 <kw name="เลือก timeslot">
 <kw name="Click Element" library="Selenium2Library">
@@ -203,18 +203,18 @@
 <arguments>
 <arg>//*[@id="__layout"]/div/div[2]/div[3]/div/div[1]/div[2]/div[6]/div[2]/div/div[7]</arg>
 </arguments>
-<msg timestamp="20200703 15:10:52.480" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[3]/div/div[1]/div[2]/div[6]/div[2]/div/div[7]'.</msg>
-<status status="PASS" starttime="20200703 15:10:52.479" endtime="20200703 15:10:52.546"></status>
+<msg timestamp="20200703 15:33:19.993" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[3]/div/div[1]/div[2]/div[6]/div[2]/div/div[7]'.</msg>
+<status status="PASS" starttime="20200703 15:33:19.993" endtime="20200703 15:33:20.056"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>link=ดำเนินการต่อ</arg>
 </arguments>
-<msg timestamp="20200703 15:10:52.547" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
-<status status="PASS" starttime="20200703 15:10:52.546" endtime="20200703 15:10:52.633"></status>
+<msg timestamp="20200703 15:33:20.056" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
+<status status="PASS" starttime="20200703 15:33:20.056" endtime="20200703 15:33:20.150"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:52.479" endtime="20200703 15:10:52.633"></status>
+<status status="PASS" starttime="20200703 15:33:19.993" endtime="20200703 15:33:20.150"></status>
 </kw>
 <kw name="รอโหลด">
 <kw name="Sleep" library="BuiltIn">
@@ -222,10 +222,10 @@
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20200703 15:11:02.635" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200703 15:10:52.634" endtime="20200703 15:11:02.635"></status>
+<msg timestamp="20200703 15:33:30.151" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200703 15:33:20.150" endtime="20200703 15:33:30.152"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:10:52.634" endtime="20200703 15:11:02.635"></status>
+<status status="PASS" starttime="20200703 15:33:20.150" endtime="20200703 15:33:30.152"></status>
 </kw>
 <kw name="เลือก payment">
 <kw name="Click Element" library="Selenium2Library">
@@ -233,18 +233,18 @@
 <arguments>
 <arg>//*[@id="__layout"]/div/div[2]/div[2]/div/div[1]/div/div[1]</arg>
 </arguments>
-<msg timestamp="20200703 15:11:02.636" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div/div[1]/div/div[1]'.</msg>
-<status status="PASS" starttime="20200703 15:11:02.636" endtime="20200703 15:11:02.683"></status>
+<msg timestamp="20200703 15:33:30.153" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div/div[1]/div/div[1]'.</msg>
+<status status="PASS" starttime="20200703 15:33:30.153" endtime="20200703 15:33:30.197"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>link=ดำเนินการต่อ</arg>
 </arguments>
-<msg timestamp="20200703 15:11:02.683" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
-<status status="PASS" starttime="20200703 15:11:02.683" endtime="20200703 15:11:02.762"></status>
+<msg timestamp="20200703 15:33:30.198" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
+<status status="PASS" starttime="20200703 15:33:30.197" endtime="20200703 15:33:30.273"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:11:02.636" endtime="20200703 15:11:02.762"></status>
+<status status="PASS" starttime="20200703 15:33:30.152" endtime="20200703 15:33:30.273"></status>
 </kw>
 <kw name="รอโหลด">
 <kw name="Sleep" library="BuiltIn">
@@ -252,10 +252,10 @@
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20200703 15:11:12.763" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200703 15:11:02.762" endtime="20200703 15:11:12.763"></status>
+<msg timestamp="20200703 15:33:40.274" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200703 15:33:30.274" endtime="20200703 15:33:40.274"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:11:02.762" endtime="20200703 15:11:12.763"></status>
+<status status="PASS" starttime="20200703 15:33:30.273" endtime="20200703 15:33:40.275"></status>
 </kw>
 <kw name="ConFirm">
 <kw name="Click Element" library="Selenium2Library">
@@ -263,10 +263,18 @@
 <arguments>
 <arg>//*[@id="__layout"]/div/div[2]/div[2]/div/div[2]/div[2]/button</arg>
 </arguments>
-<msg timestamp="20200703 15:11:12.764" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div/div[2]/div[2]/button'.</msg>
-<status status="PASS" starttime="20200703 15:11:12.764" endtime="20200703 15:11:12.848"></status>
+<msg timestamp="20200703 15:33:40.276" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div/div[2]/div[2]/button'.</msg>
+<status status="PASS" starttime="20200703 15:33:40.275" endtime="20200703 15:33:40.357"></status>
 </kw>
-<status status="PASS" starttime="20200703 15:11:12.764" endtime="20200703 15:11:12.848"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200703 15:34:00.358" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20200703 15:33:40.357" endtime="20200703 15:34:00.358"></status>
+</kw>
+<status status="PASS" starttime="20200703 15:33:40.275" endtime="20200703 15:34:00.358"></status>
 </kw>
 <kw name="Order สำเร็จ">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -274,29 +282,35 @@
 <arguments>
 <arg>${expected_result}</arg>
 </arguments>
+<status status="PASS" starttime="20200703 15:34:00.358" endtime="20200703 15:34:00.454"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>/Users/nanattapong/Robot101/success</arg>
+</arguments>
+<status status="PASS" starttime="20200703 15:34:00.454" endtime="20200703 15:34:00.454"></status>
+</kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200703 15:11:18.453" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200703 15:11:17.985" endtime="20200703 15:11:18.454"></status>
+<msg timestamp="20200703 15:34:00.938" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="success/selenium-screenshot-2.png"&gt;&lt;img src="success/selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200703 15:34:00.454" endtime="20200703 15:34:00.938"></status>
 </kw>
-<msg timestamp="20200703 15:11:18.458" level="FAIL">Text 'ทำรายการเสร็จสิ้น!' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20200703 15:11:12.848" endtime="20200703 15:11:18.458"></status>
+<status status="PASS" starttime="20200703 15:34:00.358" endtime="20200703 15:34:00.938"></status>
 </kw>
-<status status="FAIL" starttime="20200703 15:11:12.848" endtime="20200703 15:11:18.458"></status>
-</kw>
-<status status="FAIL" starttime="20200703 15:09:56.637" endtime="20200703 15:11:18.459" critical="yes">Text 'ทำรายการเสร็จสิ้น!' did not appear in 5 seconds.</status>
+<status status="PASS" starttime="20200703 15:32:24.097" endtime="20200703 15:34:00.938" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200703 15:09:56.395" endtime="20200703 15:11:18.459"></status>
+<status status="PASS" starttime="20200703 15:32:23.944" endtime="20200703 15:34:00.939"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Robot101">Robot101</stat>
+<stat pass="1" fail="0" id="s1" name="Robot101">Robot101</stat>
 </suite>
 </statistics>
 <errors>
