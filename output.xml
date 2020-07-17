@@ -1,293 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20200710 11:53:36.894" rpa="false">
-<suite id="s1" name="Robot101" source="/Users/nanattapong/Robot101/robot101.robot">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20200717 18:11:19.985" rpa="false">
+<suite id="s1" name="Robotcroppage" source="/Users/nanattapong/Robot101/robotcroppage.robot">
 <test id="s1-t1" name="ทดสอบ robot101">
-<kw name="เปิดเว็บBigc">
-<kw name="Open Browser" library="Selenium2Library">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200710 11:53:37.107" level="INFO">Opening browser 'chrome' to base url 'http://www.bigc.co.th'.</msg>
-<status status="PASS" starttime="20200710 11:53:37.107" endtime="20200710 11:53:44.463"></status>
+<msg timestamp="20200717 18:11:20.212" level="INFO">Opening browser 'chrome' to base url 'https://newrelic.com/'.</msg>
+<status status="PASS" starttime="20200717 18:11:20.211" endtime="20200717 18:11:24.695"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:53:37.106" endtime="20200710 11:53:44.463"></status>
+<status status="PASS" starttime="20200717 18:11:20.211" endtime="20200717 18:11:24.695"></status>
 </kw>
-<kw name="คลิ๊ก Login">
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
+<kw name="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>link=เข้าสู่ระบบ</arg>
+<arg>//*[@id="desk-login"]</arg>
 </arguments>
-<msg timestamp="20200710 11:53:44.464" level="INFO">Clicking link 'link=เข้าสู่ระบบ'.</msg>
-<status status="PASS" starttime="20200710 11:53:44.464" endtime="20200710 11:53:44.787"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:53:44.463" endtime="20200710 11:53:44.787"></status>
-</kw>
-<kw name="Input Login">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="email"]</arg>
-<arg>${user_name}</arg>
-</arguments>
-<msg timestamp="20200710 11:53:44.788" level="INFO">Typing text 'bugfiring@gmail.com' into text field '//*[@id="email"]'.</msg>
-<status status="PASS" starttime="20200710 11:53:44.788" endtime="20200710 11:53:45.134"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="__BVID__147"]</arg>
-<arg>${password}</arg>
-</arguments>
-<msg timestamp="20200710 11:53:45.135" level="INFO">Typing text 'bluebell' into text field '//*[@id="__BVID__147"]'.</msg>
-<status status="PASS" starttime="20200710 11:53:45.134" endtime="20200710 11:53:45.258"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks the button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="login-modal___BV_modal_body_"]/div/div[2]/form/div[4]/div[1]/button</arg>
-</arguments>
-<msg timestamp="20200710 11:53:45.259" level="INFO">Clicking button '//*[@id="login-modal___BV_modal_body_"]/div/div[2]/form/div[4]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200710 11:53:45.258" endtime="20200710 11:53:45.338"></status>
+<msg timestamp="20200717 18:11:24.697" level="INFO">Clicking element '//*[@id="desk-login"]'.</msg>
+<status status="PASS" starttime="20200717 18:11:24.696" endtime="20200717 18:11:29.812"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>10s</arg>
+<arg>1s</arg>
 </arguments>
-<msg timestamp="20200710 11:53:55.341" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200710 11:53:45.339" endtime="20200710 11:53:55.341"></status>
+<msg timestamp="20200717 18:11:30.813" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200717 18:11:29.812" endtime="20200717 18:11:30.814"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:53:44.788" endtime="20200710 11:53:55.342"></status>
-</kw>
-<kw name="ค้นหา น้ำ">
-<kw name="Input Text" library="Selenium2Library">
+<kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="header"]/div[1]/div/div[2]/div/div/form/input</arg>
-<arg>${searchData}</arg>
+<arg>name=login[email]</arg>
+<arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20200710 11:53:55.343" level="INFO">Typing text 'พัดลม' into text field '//*[@id="header"]/div[1]/div/div[2]/div/div/form/input'.</msg>
-<status status="PASS" starttime="20200710 11:53:55.342" endtime="20200710 11:53:55.437"></status>
+<msg timestamp="20200717 18:11:30.814" level="INFO">Typing text 'supasayos@bigc.co.th' into text field 'name=login[email]'.</msg>
+<status status="PASS" starttime="20200717 18:11:30.814" endtime="20200717 18:11:30.936"></status>
 </kw>
-<kw name="Press Keys" library="Selenium2Library">
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="header"]/div[1]/div/div[2]/div/div/form/input</arg>
-<arg>ENTER</arg>
+<arg>//*[@id="login_submit"]</arg>
 </arguments>
-<msg timestamp="20200710 11:53:55.438" level="INFO">Sending key(s) ('ENTER',) to //*[@id="header"]/div[1]/div/div[2]/div/div/form/input element.</msg>
-<msg timestamp="20200710 11:53:55.723" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20200710 11:53:55.724" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20200710 11:53:55.437" endtime="20200710 11:53:55.734"></status>
+<msg timestamp="20200717 18:11:30.936" level="INFO">Clicking button '//*[@id="login_submit"]'.</msg>
+<status status="PASS" starttime="20200717 18:11:30.936" endtime="20200717 18:11:30.996"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200717 18:11:31.998" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200717 18:11:30.996" endtime="20200717 18:11:31.998"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="login_password"]</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200717 18:11:31.999" level="INFO">Typing text 'qwerty12345QWERTY' into text field '//*[@id="login_password"]'.</msg>
+<status status="PASS" starttime="20200717 18:11:31.999" endtime="20200717 18:11:32.071"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="login_submit"]</arg>
+</arguments>
+<msg timestamp="20200717 18:11:32.071" level="INFO">Clicking button '//*[@id="login_submit"]'.</msg>
+<status status="PASS" starttime="20200717 18:11:32.071" endtime="20200717 18:11:43.107"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20200710 11:54:00.735" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200710 11:53:55.734" endtime="20200710 11:54:00.736"></status>
+<msg timestamp="20200717 18:11:48.109" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200717 18:11:43.108" endtime="20200717 18:11:48.110"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:53:55.342" endtime="20200710 11:54:00.736"></status>
+<status status="PASS" starttime="20200717 18:11:24.696" endtime="20200717 18:11:48.110"></status>
 </kw>
-<kw name="รอผลลัพธ์">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until ``text`` appears on the current page.</doc>
-<arguments>
-<arg>${searchData}</arg>
-</arguments>
-<status status="PASS" starttime="20200710 11:54:00.737" endtime="20200710 11:54:00.766"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:54:00.736" endtime="20200710 11:54:00.766"></status>
-</kw>
-<kw name="คลิ๊กปิดblackdrop">
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks the button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="header"]/div[1]/div/div[2]/div/div/button</arg>
-</arguments>
-<msg timestamp="20200710 11:54:00.767" level="INFO">Clicking button '//*[@id="header"]/div[1]/div/div[2]/div/div/button'.</msg>
-<status status="PASS" starttime="20200710 11:54:00.766" endtime="20200710 11:54:00.814"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:54:00.766" endtime="20200710 11:54:00.814"></status>
-</kw>
-<kw name="กดเพิ่มสินค้า">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="product-list"]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/button</arg>
-</arguments>
-<msg timestamp="20200710 11:54:00.815" level="INFO">Clicking element '//*[@id="product-list"]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/button'.</msg>
-<status status="PASS" starttime="20200710 11:54:00.814" endtime="20200710 11:54:00.943"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10s</arg>
-</arguments>
-<msg timestamp="20200710 11:54:10.943" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200710 11:54:00.943" endtime="20200710 11:54:10.943"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:54:00.814" endtime="20200710 11:54:10.944"></status>
-</kw>
-<kw name="ไปหน้าcart">
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>http://www.bigc.co.th/cart</arg>
-</arguments>
-<msg timestamp="20200710 11:54:10.945" level="INFO">Opening url 'http://www.bigc.co.th/cart'</msg>
-<status status="PASS" starttime="20200710 11:54:10.945" endtime="20200710 11:54:11.624"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10s</arg>
-</arguments>
-<msg timestamp="20200710 11:54:21.625" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200710 11:54:11.624" endtime="20200710 11:54:21.625"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:54:10.944" endtime="20200710 11:54:21.625"></status>
-</kw>
-<kw name="คลิ๊กไป step1">
-<kw name="Click Link" library="Selenium2Library">
+<kw name="Click Select">
+<kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
-<arg>link=ดำเนินการสั่งซื้อ</arg>
+<arg>link=${project}</arg>
 </arguments>
-<msg timestamp="20200710 11:54:21.626" level="INFO">Clicking link 'link=ดำเนินการสั่งซื้อ'.</msg>
-<status status="PASS" starttime="20200710 11:54:21.626" endtime="20200710 11:54:21.753"></status>
+<msg timestamp="20200717 18:11:48.111" level="INFO">Clicking link 'link=BigC SPO'.</msg>
+<status status="PASS" starttime="20200717 18:11:48.111" endtime="20200717 18:11:52.099"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>7s</arg>
+<arg>5s</arg>
 </arguments>
-<msg timestamp="20200710 11:54:28.754" level="INFO">Slept 7 seconds</msg>
-<status status="PASS" starttime="20200710 11:54:21.753" endtime="20200710 11:54:28.754"></status>
+<msg timestamp="20200717 18:11:57.101" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200717 18:11:52.099" endtime="20200717 18:11:57.102"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:54:21.625" endtime="20200710 11:54:28.755"></status>
+<status status="PASS" starttime="20200717 18:11:48.110" endtime="20200717 18:11:57.102"></status>
 </kw>
-<kw name="คลิ๊กไป step2">
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>link=ดำเนินการต่อ</arg>
-</arguments>
-<msg timestamp="20200710 11:54:28.756" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
-<status status="PASS" starttime="20200710 11:54:28.755" endtime="20200710 11:54:28.876"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>13s</arg>
-</arguments>
-<msg timestamp="20200710 11:54:41.877" level="INFO">Slept 13 seconds</msg>
-<status status="PASS" starttime="20200710 11:54:28.876" endtime="20200710 11:54:41.877"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:54:28.755" endtime="20200710 11:54:41.877"></status>
-</kw>
-<kw name="เลือก timeslot">
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Select time">
+<kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="__layout"]/div/div[2]/div[3]/div/div[1]/div[2]/div[7]/div[2]/div/div[7]</arg>
+<arg>//*[@id="time_window_nav"]/h4</arg>
 </arguments>
-<msg timestamp="20200710 11:54:41.878" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[3]/div/div[1]/div[2]/div[7]/div[2]/div/div[7]'.</msg>
-<status status="PASS" starttime="20200710 11:54:41.878" endtime="20200710 11:54:41.965"></status>
+<msg timestamp="20200717 18:11:57.103" level="INFO">Clicking element '//*[@id="time_window_nav"]/h4'.</msg>
+<status status="PASS" starttime="20200717 18:11:57.103" endtime="20200717 18:11:57.152"></status>
 </kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>link=ดำเนินการต่อ</arg>
-</arguments>
-<msg timestamp="20200710 11:54:41.965" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
-<status status="PASS" starttime="20200710 11:54:41.965" endtime="20200710 11:54:42.086"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>10s</arg>
-</arguments>
-<msg timestamp="20200710 11:54:52.087" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200710 11:54:42.086" endtime="20200710 11:54:52.087"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:54:41.878" endtime="20200710 11:54:52.087"></status>
-</kw>
-<kw name="เลือก payment">
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="__layout"]/div/div[2]/div[2]/div/div[1]/div/div[1]</arg>
+<arg>//*[@id="time_window_ranges"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20200710 11:54:52.088" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div/div[1]/div/div[1]'.</msg>
-<status status="PASS" starttime="20200710 11:54:52.088" endtime="20200710 11:54:52.150"></status>
-</kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>link=ดำเนินการต่อ</arg>
-</arguments>
-<msg timestamp="20200710 11:54:52.150" level="INFO">Clicking link 'link=ดำเนินการต่อ'.</msg>
-<status status="PASS" starttime="20200710 11:54:52.150" endtime="20200710 11:54:52.246"></status>
+<msg timestamp="20200717 18:11:57.152" level="INFO">Clicking element '//*[@id="time_window_ranges"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20200717 18:11:57.152" endtime="20200717 18:12:01.062"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>10s</arg>
+<arg>5s</arg>
 </arguments>
-<msg timestamp="20200710 11:55:02.248" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20200710 11:54:52.246" endtime="20200710 11:55:02.248"></status>
+<msg timestamp="20200717 18:12:06.062" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200717 18:12:01.062" endtime="20200717 18:12:06.063"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:54:52.088" endtime="20200710 11:55:02.248"></status>
+<status status="PASS" starttime="20200717 18:11:57.102" endtime="20200717 18:12:06.063"></status>
 </kw>
-<kw name="ConFirm">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="__layout"]/div/div[2]/div[2]/div/div[2]/div[2]/button</arg>
-</arguments>
-<msg timestamp="20200710 11:55:02.249" level="INFO">Clicking element '//*[@id="__layout"]/div/div[2]/div[2]/div/div[2]/div[2]/button'.</msg>
-<status status="PASS" starttime="20200710 11:55:02.249" endtime="20200710 11:55:02.337"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>20s</arg>
-</arguments>
-<msg timestamp="20200710 11:55:22.338" level="INFO">Slept 20 seconds</msg>
-<status status="PASS" starttime="20200710 11:55:02.337" endtime="20200710 11:55:22.338"></status>
-</kw>
-<status status="PASS" starttime="20200710 11:55:02.248" endtime="20200710 11:55:22.339"></status>
-</kw>
-<kw name="Order สำเร็จ">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until ``text`` appears on the current page.</doc>
-<arguments>
-<arg>${expected_result}</arg>
-</arguments>
-<status status="PASS" starttime="20200710 11:55:22.339" endtime="20200710 11:55:22.366"></status>
-</kw>
-<kw name="Set Screenshot Directory" library="Selenium2Library">
+<kw name="Capture &amp; Crop Screen">
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <doc>Sets the directory for captured screenshots.</doc>
 <arguments>
-<arg>/Users/nanattapong/Robot101/success</arg>
+<arg>/Users/nanattapong/Robot101/Capture</arg>
 </arguments>
-<status status="PASS" starttime="20200710 11:55:22.367" endtime="20200710 11:55:22.367"></status>
+<status status="PASS" starttime="20200717 18:12:06.064" endtime="20200717 18:12:06.064"></status>
 </kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200710 11:55:22.853" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="success/selenium-screenshot-7.png"&gt;&lt;img src="success/selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200710 11:55:22.367" endtime="20200710 11:55:22.854"></status>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<arguments>
+<arg>ID=app_response</arg>
+<arg>newrelic-Check{index}.png</arg>
+</arguments>
+<msg timestamp="20200717 18:12:06.360" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Capture/newrelic-Check1.png"&gt;&lt;img src="Capture/newrelic-Check1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200717 18:12:06.064" endtime="20200717 18:12:06.360"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:55:22.339" endtime="20200710 11:55:22.854"></status>
+<status status="PASS" starttime="20200717 18:12:06.063" endtime="20200717 18:12:06.360"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:53:37.105" endtime="20200710 11:55:22.854" critical="yes"></status>
+<status status="PASS" starttime="20200717 18:11:20.210" endtime="20200717 18:12:06.360" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200710 11:53:36.897" endtime="20200710 11:55:22.855"></status>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" starttime="20200717 18:11:19.986" endtime="20200717 18:12:06.362"></status>
 </suite>
 <statistics>
 <total>
@@ -297,7 +161,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Robot101">Robot101</stat>
+<stat pass="1" fail="0" id="s1" name="Robotcroppage">Robotcroppage</stat>
 </suite>
 </statistics>
 <errors>
