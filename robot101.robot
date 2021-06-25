@@ -6,8 +6,8 @@ Library    Selenium2Library
 ${browser}    chrome
 ${url}    http://www.bigc.co.th
 ${searchData}     พัดลม
-${user_name}      bugfiring@gmail.com
-${password}      bluebell
+${user_name}      ******
+${password}      ******
 ${expected_result}      ทำรายการเสร็จสิ้น!
 
 
