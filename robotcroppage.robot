@@ -6,8 +6,8 @@ Library           SeleniumLibrary
 *** Variables ***
 ${browser}    chrome
 ${url}    https://newrelic.com/
-${user_name}      supasayos@bigc.co.th
-${password}      qwerty12345QWERTY
+${user_name}      ******
+${password}      *******
 ${id-block}     app_response
 ${project}      BigC SPO
 
